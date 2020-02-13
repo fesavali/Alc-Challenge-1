@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/welcome_text"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/butcherman"
+        android:hint="@string/welcome_to_alc4_0"
+        android:inputType="textPersonName"
+        android:labelFor="@id/to_alc"
+        android:text="@string/welcome_to_alc4_0"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/to_alc"
+        style="@android:style/Widget.Button"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/button_shape"
+        android:contextClickable="true"
+        android:ellipsize="middle"
+        android:fontFamily="@font/butcherman"
+        android:text="@string/about_alc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
+
+    <Button
+        android:id="@+id/to_profile"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/button_shape"
+        android:contextClickable="true"
+        android:fontFamily="@font/butcherman"
+        android:text="@string/my_profile"
+        android:textSize="22sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_alc" />
+</android.support.constraint.ConstraintLayout>
